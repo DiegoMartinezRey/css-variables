@@ -1,3 +1,7 @@
+:root {
+  --bg-color: black;
+  --sz-bar: 30px;
+}
 * {
   box-sizing: border-box;
 }
@@ -21,4 +25,30 @@ img {
 body {
   margin: 0;
   font-family: sans-serif;
+  color: white;
+  background-color: var(--bg-color);
+  min-height: 500vh;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.bar-style {
+  height: 20px;
+  width: var(--sz-bar);
+  background-color: red;
+  top: 0;
+}
+
+.title {
+  top: 20px;
+}
+
+.button-rgb {
+  top: 100px;
+}
+
+.button-hexa {
+  top: 150px;
 }
