@@ -25,7 +25,8 @@ const getColorByHexa = () => {
 };
 
 const printScroll = () => {
-  let barPorcent = (window.scrollY * 100) / 3197.5;
+  let barPorcent =
+    (window.scrollY * 100) / (document.body.scrollHeight - window.innerHeight);
   rootStyles.setProperty("--sz-bar", `${barPorcent}%`);
   titleElement.textContent = `Desplazamiento: ${Math.ceil(barPorcent)}%`;
 };
