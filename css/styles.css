@@ -1,6 +1,8 @@
 :root {
   --bg-color: black;
   --sz-bar: 30px;
+  --pos-cursorY: 0;
+  --pos-cursorX: 0;
 }
 * {
   box-sizing: border-box;
@@ -52,4 +54,13 @@ body {
 .button-hexa {
   top: 100px;
   left: 100px;
+}
+
+.cursor-div {
+  position: fixed;
+  top: var(--pos-cursorY);
+  left: var(--pos-cursorX);
+  width: 20px;
+  height: 20px;
+  background-color: orange;
 }

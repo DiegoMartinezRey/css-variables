@@ -31,6 +31,12 @@ const printScroll = () => {
   titleElement.textContent = `Desplazamiento: ${Math.ceil(barPorcent)}%`;
 };
 
+const cursorImage = (e) => {
+  rootStyles.setProperty("--pos-cursorY", `${e.offsetY}px`);
+  rootStyles.setProperty("--pos-cursorX", `${e.offsetX}px`);
+};
+
 buttonRGBElement.addEventListener("click", getColorByRGB);
 buttonHexaElement.addEventListener("click", getColorByHexa);
 document.addEventListener("scroll", printScroll);
+document.addEventListener("mousemove", cursorImage);
