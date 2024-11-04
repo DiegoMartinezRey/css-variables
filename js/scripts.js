@@ -32,8 +32,8 @@ const printScroll = () => {
 };
 
 const cursorImage = (e) => {
-  rootStyles.setProperty("--pos-cursorY", `${e.offsetY}px`);
-  rootStyles.setProperty("--pos-cursorX", `${e.offsetX}px`);
+  rootStyles.setProperty("--pos-cursorY", `${e.clientY}px`);
+  rootStyles.setProperty("--pos-cursorX", `${e.clientX}px`);
 };
 
 buttonRGBElement.addEventListener("click", getColorByRGB);

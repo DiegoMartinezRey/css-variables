@@ -63,4 +63,5 @@ body {
   width: 20px;
   height: 20px;
   background-color: orange;
+  pointer-events: none;
 }
